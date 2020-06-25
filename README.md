@@ -31,5 +31,10 @@ Note, at least on a not so powerful laptop computer it took in the order of 100m
 
 ### Results
 
+Below is an image showing a scenario where the operator does not focus on the computer screen. Despite the cascade based classifier successfully detecting both eyes, our simple attention checking algorithm (using the eye positions) infers a negative attention to the screen. 
 ![Example of negative attention to the computer screen ](https://github.com/robert-preissl/opencv_attention_detection/blob/master/pics/attention_negative_1.png "Attention detection is negative")
+
+In contrast, this is an example of a positive attention detection. For a positive detection, we need to detect the face + both eyes and, in addition, the eye positions have to fulfill certain symmetry requirements in respect to the facial region.
+![Example of positive attention to the computer screen ](https://github.com/robert-preissl/opencv_attention_detection/blob/master/pics/attention_positive_1.png "Attention detection is positive")
+
 
