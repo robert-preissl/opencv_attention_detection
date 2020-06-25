@@ -19,10 +19,11 @@ We assume a person is sitting right in front of a camera (i.e., in a roughly 90 
 The included notebook demonstrates how to use the C++ Jupyter kernel [xeus-cling](https://github.com/jupyter-xeus/xeus-cling). Jupyter notebooks are a great way quickly iterating on ideas before moving them to production.
 Mostly people use python based Jupyter notebooks, but this demo demonstrates that C++ (up to C++-17) kernels are available too and work great.
 
-### Attention detection with OpenCV using two different methods
+### Attention detection with OpenCV using a combination of two different methods
 
-First, we are using OpenCV's deep neural network module with some openly available Caffe model for face detection.
-Second, if a face has been successfully detected, we are using a Haar feature-based cascade classifier to detect eyes within the previously face region.
+First, we are using OpenCV's deep neural network module with an openly available Caffe model for face detection.
+
+Second, if a face has successfully been detected, we are using a Haar feature-based cascade classifier to detect eyes within the previously detected facial region.
 
 #### Optimization
 
@@ -30,4 +31,5 @@ Note, at least on a not so powerful laptop computer it took in the order of 100m
 
 ### Results
 
+![Example of negative attention to the computer screen ](https://github.com/robert-preissl/opencv_attention_detection/blob/master/pics/attention_negative_1.png "Attention detection is negative")
 
