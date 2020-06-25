@@ -1,23 +1,26 @@
 # opencv_attention_detection
-OpenCV based attention detection demo: using Caffe models as well as cascade classifiers
+This is an OpenCV based attention detection demo: using Caffe models as well as cascade classifiers.
 
 ## Scope
 
 This is a C++ based demo for an attention detection system using OpenCV.
 
-In detail, we have been analyzing the camera feed of a laptop to detect a simple set of relevant features to infer if the person in front of the camera pays attention to the screen yes or no.
+In detail, we have been analyzing the camera feed of a laptop to detect a simple set of relevant features to infer if a person in front of the camera pays attention to the screen yes or no.
 
 The set of features extracted in this demo are face plus eyes of a person.
 
 We are using a very simple algorithm to detect if a person pays attention (e.g., is currently working on the computer or not):
 We assume a person is sitting right in front of a camera (i.e., in a roughly 90 degrees angle to the camera), and we analyze the position of the detected eyes. From the position of eyes we infer if a person pays attention to the screen.
 
-## Main contribution to share with the community
+## Main contributions to share with the community
 
 ### Jupyter notebook
 
-The included notebook demonstrates how to use the C++ Jupyter kernel [xeus-cling](https://github.com/jupyter-xeus/xeus-cling). Jupyter notebooks are a great way quickly iterating on ideas before moving them to production.
-Mostly people use python based Jupyter notebooks, but this demo demonstrates that C++ (up to C++-17) kernels are available too and work great.
+The included notebook demonstrates how to use the C++ Jupyter kernel [xeus-cling](https://github.com/jupyter-xeus/xeus-cling). Jupyter notebooks are a great way of quickly iterating on ideas before moving them to a production environment.
+
+Most popular are python based Jupyter notebooks, but not always is Python the language for a production system.
+
+This demo demonstrates that C++ (up to C++-17) kernels are available too and work great even with more sophisticated libraries such as OpenCV.
 
 ### Attention detection with OpenCV using a combination of two different methods
 
